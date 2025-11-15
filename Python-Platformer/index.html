@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Platformer</title>
+    <link rel="stylesheet" href="/Python-Platformer/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="game-canvas" width="256" height="224"></canvas>
+    </div>
+    
+    <div class="hud">
+        <h1>Snake Arena</h1>
+        <p class="hud__status">Kopplar...</p>
+        <button id="restart-btn" class="restart-btn">🔄 Restart Game</button>
+        <div class="hud__timer">
+            <span class="timer__label">Time:</span>
+            <span class="timer__value">20</span>
+        </div>
+        <div class="hud__scoreboard">
+            <h2>Scoreboard</h2>
+            <ul class="scoreboard__list"></ul>
+        </div>
+        <div class="hud__share">
+            <p>Öppna på mobilen:</p>
+            <ul class="hud__list"></ul>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/Python-Platformer/app.js"></script>
+</body>
+</html>

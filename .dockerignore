@@ -1,0 +1,38 @@
+# Node.js dependencies (ignore all node_modules folders)
+**/node_modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Git files
+.git
+.gitignore
+
+# Docker files (don't copy into image)
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# IDE and editor files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs
+
+# Environment files (kan innehålla secrets)
+.env
+.env.local
+
+# Test files (om du har)
+*.test.js
+test/
+__tests__/

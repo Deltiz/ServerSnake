@@ -1,0 +1,17 @@
+{
+  "name": "platformer-backend",
+  "version": "1.0.0",
+  "description": "Lite Node.js backend för att spara data och streama händelser till spelet",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
