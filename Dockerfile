@@ -7,8 +7,8 @@ WORKDIR /app
 # Copy package files first (for better caching)
 COPY Python-Platformer/server/package*.json ./
 
-# Install dependencies
-RUN npm install --omit=dev
+# Install dependencies with optimizations
+RUN npm install --omit=dev --prefer-offline --no-audit --progress=false
 
 # Copy the rest of the application
 COPY Python-Platformer/ ./Python-Platformer/
