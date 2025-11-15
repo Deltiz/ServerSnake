@@ -7,7 +7,7 @@ const { Server: SocketIOServer } = require("socket.io");
 
 const GAME_WIDTH = 256;
 const GAME_HEIGHT = 224;
-const TICK_RATE = 15;
+const TICK_RATE = 10; // Reduced from 15 to save ngrok requests
 const GRID_SIZE = 8;
 const FOOD_COUNT = 5;
 const FOOD_SIZE = 6;
